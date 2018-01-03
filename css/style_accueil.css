@@ -3,7 +3,7 @@ body
   margin: 0;
   /* rastafari man jsuis tombé dessus en random j'ai un peu custom il était fade au début */
   background-color: rgb(118, 149, 4); /*couleur du haut*/
-  background-image: -webkit-linear-gradient(top, rgb(118, 149, 4), rgb(153,0,0));
+  background-image: -webkit-linear-gradient(top, rgb(0, 255, 255), rgb(153,0,0));
   background-image:    -moz-linear-gradient(top, rgb(118, 149, 4), rgb(153,0,0));
   background-image:      -o-linear-gradient(top, rgb(118, 149, 4), rgb(153,0,0));
   background-image:         linear-gradient(to bottom, rgb(118, 149, 4), rgb(153,0,0));
