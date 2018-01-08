@@ -1,1 +1,9 @@
-var ta_mere = ma_bite_en_erection
+console.log('zizi');
+$(document).ready(function() {
+ 
+    // Fakes the loading setting a timeout
+      setTimeout(function() {
+          $('body').addClass('loaded');
+      }, 3500);
+   
+  }
