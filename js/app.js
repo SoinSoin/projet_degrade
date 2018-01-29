@@ -26,12 +26,12 @@ function clickOnButton()
     if (myButton)
     {
         
-        $("#menu").animate({left:'-15rem'},{ duration:400}) && $("input").prop('disabled', false) && $(".filter").hide();
+        $("#menu").animate({left:'-15rem'},{ duration:400}) && $("input").prop('disabled', false) && $(".filter").hide() && $("#logo").animate({left:'6rem'},{ duration:400});
         myButton = false;
     }
     else
     {
-        $("#menu").animate({left:'0rem'},{duration:400}) && $("input").prop('disabled', true) && $(".filter").show();
+        $("#menu").animate({left:'0rem'},{duration:400}) && $("input").prop('disabled', true) && $(".filter").show()&&  $("#logo").animate({left:'21rem'},{ duration:400});;
         myButton = true;
     }
 }

@@ -1,25 +1,17 @@
-html{
+html {
   vertical-align: center;
 }
 
-body
-{
+body {
   margin: 0;
   /* rastafari man jsuis tombé dessus en random j'ai un peu custom il était fade au début */
   /* toujours dégueu */
-  background-color: rgb(203, 166, 214); /*couleur du haut*/
+  background-color: rgb(203, 166, 214);
+  /*couleur du haut*/
   height: 200em;
   width: 100%;
-  
 }
-#menup{
-  background-color: rgb(92, 34, 107);
-  opacity: 0,7;
-  position: sticky;
-  width: 100%;
-  height:3rem;
-  top: -1px;
-}
+
 .hamburger {
   padding: 15px 15px;
   display: inline-block;
@@ -33,72 +25,104 @@ body
   background-color: transparent;
   border: 0;
   margin: 0;
-  overflow: visible; }
-  .hamburger:hover {
-    opacity: 0.7; }
+  overflow: visible;
+}
+
+.hamburger:hover {
+  opacity: 0.7;
+}
 
 .hamburger-box {
   width: 40px;
   height: 24px;
   display: inline-block;
-  position: relative; }
+  position: relative;
+}
 
 .hamburger-inner {
   display: block;
   top: 50%;
-  margin-top: -2px; }
-  .hamburger-inner, .hamburger-inner::before, .hamburger-inner::after {
-    width: 40px;
-    height: 4px;
-    background-color: #6e02a0;
-    border-radius: 4px;
-    position: absolute;
-    transition-property: transform;
-    transition-duration: 0.15s;
-    transition-timing-function: ease; }
-  .hamburger-inner::before, .hamburger-inner::after {
-    content: "";
-    display: block; }
-  .hamburger-inner::before {
-    top: -10px; }
-  .hamburger-inner::after {
-    bottom: -10px; }
+  margin-top: -2px;
+}
+
+.hamburger-inner,
+.hamburger-inner::before,
+.hamburger-inner::after {
+  width: 40px;
+  height: 4px;
+  background-color: rgb(203, 166, 214);
+  border-radius: 4px;
+  position: absolute;
+  transition-property: transform;
+  transition-duration: 0.15s;
+  transition-timing-function: ease;
+}
+
+.hamburger-inner::before,
+.hamburger-inner::after {
+  content: "";
+  display: block;
+}
+
+.hamburger-inner::before {
+  top: -10px;
+}
+
+.hamburger-inner::after {
+  bottom: -10px;
+}
 
 /*
  * Emphatic
  */
+
 .hamburger--emphatic {
-  overflow: hidden; }
-  .hamburger--emphatic .hamburger-inner {
-    transition: background-color 0.125s 0.175s ease-in; }
-    .hamburger--emphatic .hamburger-inner::before {
-      left: 0;
-      transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in; }
-    .hamburger--emphatic .hamburger-inner::after {
-      top: 10px;
-      right: 0;
-      transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in; }
-  .hamburger--emphatic.is-active .hamburger-inner {
-    transition-delay: 0s;
-    transition-timing-function: ease-out;
-    background-color: transparent; }
-    .hamburger--emphatic.is-active .hamburger-inner::before {
-      left: -80px;
-      top: -80px;
-      transform: translate3d(80px, 80px, 0) rotate(45deg);
-      transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
-    .hamburger--emphatic.is-active .hamburger-inner::after {
-      right: -80px;
-      top: -80px;
-      transform: translate3d(-80px, 80px, 0) rotate(-45deg);
-      transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1); }
+  overflow: hidden;
+}
+
+.hamburger--emphatic .hamburger-inner {
+  transition: background-color 0.125s 0.175s ease-in;
+}
+
+.hamburger--emphatic .hamburger-inner::before {
+  left: 0;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, left 0.125s 0.175s ease-in;
+}
+
+.hamburger--emphatic .hamburger-inner::after {
+  top: 10px;
+  right: 0;
+  transition: transform 0.125s cubic-bezier(0.6, 0.04, 0.98, 0.335), top 0.05s 0.125s linear, right 0.125s 0.175s ease-in;
+}
+
+.hamburger--emphatic.is-active .hamburger-inner {
+  transition-delay: 0s;
+  transition-timing-function: ease-out;
+  background-color: transparent;
+}
+
+.hamburger--emphatic.is-active .hamburger-inner::before {
+  left: -80px;
+  top: -80px;
+  transform: translate3d(80px, 80px, 0) rotate(45deg);
+  transition: left 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
+
+.hamburger--emphatic.is-active .hamburger-inner::after {
+  right: -80px;
+  top: -80px;
+  transform: translate3d(-80px, 80px, 0) rotate(-45deg);
+  transition: right 0.125s ease-out, top 0.05s 0.125s linear, transform 0.125s 0.175s cubic-bezier(0.075, 0.82, 0.165, 1);
+}
 
 .hamburger-box {
-  left: 0rem; }
+  left: 0rem;
+}
 
 body {
   margin: 0;
-  padding: 0; }
+  padding: 0;
+}
 
 .filter {
   position: fixed;
@@ -108,7 +132,8 @@ body {
   background-color: rgb(106, 99, 110);
   display: block;
   opacity: 0.33;
-  display: none; }
+  display: none;
+}
 
 #menu {
   position: absolute;
@@ -116,11 +141,31 @@ body {
   width: 14rem;
   left: -15rem;
   background-color: #6e02a0;
-  box-shadow: 1px 1px 12px #4e4353; }
-  #menu #burger {
-    position: absolute;
-    left: 15rem; }
+  box-shadow: 1px 1px 12px #4e4353;
+}
 
+#menu #burger {
+  position: absolute;
+  left: 15rem;
+}
 
+#menup {
+  background-color: #6e02a0;
+  opacity: 0, 7;
+  position: sticky;
+  width: 100%;
+  height: 4.5rem;
+  top: -1px;
+  box-shadow: 1px 1px 12px #4e4353;
+}
+
+#logo{
+  position: absolute;
+  width:6rem;
+  background-color: rgb(203, 166, 214);
+  height: 2rem;
+left: 6em;
+top: 0.5rem;
+}
 
 /*# sourceMappingURL=test.css.map */
