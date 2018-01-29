@@ -6,9 +6,9 @@ body {
   margin: 0;
   /* rastafari man jsuis tombé dessus en random j'ai un peu custom il était fade au début */
   /* toujours dégueu */
-  background-color: rgb(203, 166, 214);
+  background:  linear-gradient(to top, rgb(195, 55, 100), rgb(29, 38, 113)) repeat scroll 0% 0%;
   /*couleur du haut*/
-  height: 200em;
+  height: 100em;
   width: 100%;
 }
 
