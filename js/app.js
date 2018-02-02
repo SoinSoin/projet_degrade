@@ -19,8 +19,6 @@ if (hamburgers.length > 0) {
 
 var myButton = false;
 
-
- 
 function clickOnButton()
 {
     if (myButton)
@@ -31,12 +29,21 @@ function clickOnButton()
     }
     else
     {
-        $("#menu").animate({left:'0rem'},{duration:400}) && $("input").prop('disabled', true) && $(".filter").show()&&  $("#logo").animate({left:'21rem'},{ duration:400});;
+        $("#menu").animate({left:'0rem'},{duration:400}) && $("input").prop('disabled', true) && $(".filter").show()&&  $("#logo").animate({left:'21rem'},{ duration:400});
         myButton = true;
     }
+
 }
 
 
- 
-$("#burger").click(function() { clickOnButton(); } );
 
+ 
+$("#burger").click(function() { clickOnButton(); } ) ;
+
+
+
+
+
+$("#couleur").click(function(){
+    $("#color").toggleClass("400");
+});

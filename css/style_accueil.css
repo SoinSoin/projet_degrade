@@ -6,9 +6,9 @@ body {
   margin: 0;
   /* rastafari man jsuis tombé dessus en random j'ai un peu custom il était fade au début */
   /* toujours dégueu */
-  background:  linear-gradient(to top, rgb(195, 55, 100), rgb(29, 38, 113)) repeat scroll 0% 0%;
+  
   /*couleur du haut*/
-  height: 100em;
+  height: 100rem;
   width: 100%;
 }
 
@@ -50,7 +50,7 @@ body {
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: rgb(203, 166, 214);
+  background-color: #da00f4;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -129,7 +129,7 @@ body {
   height: 100%;
   width: 100%;
   z-index: -1;
-  background-color: rgb(106, 99, 110);
+  background-color: #6a00cf;
   display: block;
   opacity: 0.33;
   display: none;
@@ -140,8 +140,7 @@ body {
   height: 42rem;
   width: 14rem;
   left: -15rem;
-  background-color: #6e02a0;
-  box-shadow: 1px 1px 12px #4e4353;
+  background-color: #9100dc;
 }
 
 #menu #burger {
@@ -150,8 +149,8 @@ body {
 }
 
 #menup {
-  background-color: #6e02a0;
-  opacity: 0, 7;
+  background-color:#9100dc;
+  opacity: 0.7;
   position: sticky;
   width: 100%;
   height: 4.5rem;
@@ -167,5 +166,24 @@ body {
 left: 6em;
 top: 0.5rem;
 }
+ #couleur, #forme,#angle{
+  position: relative;
+  vertical-align: center;
+  cursor: pointer;
+  background-color: azure;
+  width: 4em;
+  height: 2em;
+  left:2em;
+  top:4em;
+}
+#color{
+position: absolute;
+height: 4rem;
+width: 10rem;
+background-color: yellow;
+top:7rem;
+display:none;
+}
+
 
 /*# sourceMappingURL=test.css.map */
