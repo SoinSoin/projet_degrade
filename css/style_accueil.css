@@ -1,6 +1,8 @@
+
 html {
   vertical-align: center;
   color: #BE9AA2;
+  font-family: Monoton;
 }
 
 .hamburger {
@@ -167,7 +169,6 @@ body {
   height: 2em;
   left: 2em;
   top: 4em;
-  margin: 
 }
 
 
