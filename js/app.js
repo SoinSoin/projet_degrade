@@ -1,6 +1,6 @@
 
   console.log("hamburger");
-
+//hamburger bouton
 var forEach = function (t, o, r) {
     if ("[object Object]" === Object.prototype.toString.call(t))
         for (var c in t) Object.prototype.hasOwnProperty.call(t, c) && o.call(r, t[c], c, t);
@@ -16,34 +16,42 @@ if (hamburgers.length > 0) {
         }, false);
     });
 }
-
-var myButton = false;
-
+// animation de la toolbar
+var myMenu = false;
 function clickOnButton()
-{
-    if (myButton)
+{   
+    
+    if (myMenu)
     {
-        
-        $("#menu").animate({left:'-15rem'},{ duration:400}) && $("input").prop('disabled', false) && $(".filter").hide() && $("#logo").animate({left:'6rem'},{ duration:400});
-        myButton = false;
+    
+        $("#menu").animate({left:'-18rem'},{ duration:400});
+        $("input").prop('disabled', false);
+        $(".filter").hide(); 
+        $(".brand-logo").css("cursor"," pointer"); 
+        $('a').add('href');
+        myMenu = false;
     }
     else
-    {
-        $("#menu").animate({left:'0rem'},{duration:400}) && $("input").prop('disabled', true) && $(".filter").show()&&  $("#logo").animate({left:'21rem'},{ duration:400});
-        myButton = true;
+    {   
+
+        $("#menu").animate({left:'0rem'},{duration:400});
+        $("input").prop('disabled', true);
+        $(".filter").show();
+        $(".brand-logo").css("cursor","default"); 
+        $('a').removeAttr('href');
+        myMenu = true;
     }
 
 }
+//Le clique du bouton ainsi que du filtre il lie l'animation de la toolbar ainsi que celle du bouton haburger
+var bouttonBurg =  $(".hamburger");
+$(".hamburger, .filter").click(function() { 
+    clickOnButton();
+    if(myMenu == true && bouttonBurg.hasClass("is-active") ) {
+        $("#macdo").addClass("is-active");
+    } else if  (myMenu == false) {
+        $("#macdo").removeClass("is-active");   
+    }
+ } ) ;
 
 
-
- 
-$("#burger").click(function() { clickOnButton(); } ) ;
-
-
-
-
-
-$("#couleur").click(function(){
-    $("#color").toggleClass("400");
-});

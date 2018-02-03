@@ -2,18 +2,8 @@ html {
   vertical-align: center;
 }
 
-body {
-  margin: 0;
-  /* rastafari man jsuis tombé dessus en random j'ai un peu custom il était fade au début */
-  /* toujours dégueu */
-  
-  /*couleur du haut*/
-  height: 100rem;
-  width: 100%;
-}
-
 .hamburger {
-  padding: 15px 15px;
+  padding: 6px 12px;
   display: inline-block;
   cursor: pointer;
   transition-property: opacity, filter;
@@ -26,10 +16,11 @@ body {
   border: 0;
   margin: 0;
   overflow: visible;
+  border-radius: 50%;
 }
 
 .hamburger:hover {
-  opacity: 0.7;
+  opacity: 1;
 }
 
 .hamburger-box {
@@ -50,7 +41,7 @@ body {
 .hamburger-inner::after {
   width: 40px;
   height: 4px;
-  background-color: #da00f4;
+  background: #fff;
   border-radius: 4px;
   position: absolute;
   transition-property: transform;
@@ -99,6 +90,7 @@ body {
   transition-delay: 0s;
   transition-timing-function: ease-out;
   background-color: transparent;
+  box-shadow: none;
 }
 
 .hamburger--emphatic.is-active .hamburger-inner::before {
@@ -124,66 +116,67 @@ body {
   padding: 0;
 }
 
+.filter,body {
+  height: 100rem;
+  width: 100%;  
+}
+
 .filter {
   position: fixed;
-  height: 100%;
-  width: 100%;
-  z-index: -1;
   background-color: #6a00cf;
-  display: block;
   opacity: 0.33;
   display: none;
+  
 }
 
 #menu {
   position: absolute;
-  height: 42rem;
-  width: 14rem;
-  left: -15rem;
+  height: 50rem;
+  width: 17rem;
+  left: -18rem;
   background-color: #9100dc;
+  box-shadow:     0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
+
 
 #menu #burger {
   position: absolute;
-  left: 15rem;
+  left: 18rem;
+  z-index: 2;
+  opacity: 2;
 }
 
-#menup {
-  background-color:#9100dc;
-  opacity: 0.7;
-  position: sticky;
-  width: 100%;
-  height: 4.5rem;
-  top: -1px;
-  box-shadow: 1px 1px 12px #4e4353;
-}
 
-#logo{
+
+#logo {
   position: absolute;
-  width:6rem;
+  width: 6rem;
   background-color: rgb(203, 166, 214);
   height: 2rem;
-left: 6em;
-top: 0.5rem;
+  left: 6em;
+  top: 0.5rem;
 }
- #couleur, #forme,#angle{
+
+#couleur,
+#forme,
+#angle {
   position: relative;
   vertical-align: center;
   cursor: pointer;
   background-color: azure;
   width: 4em;
   height: 2em;
-  left:2em;
-  top:4em;
-}
-#color{
-position: absolute;
-height: 4rem;
-width: 10rem;
-background-color: yellow;
-top:7rem;
-display:none;
+  left: 2em;
+  top: 4em;
 }
 
+#color {
+  position: absolute;
+  height: 4rem;
+  width: 10rem;
+  background-color: yellow;
+  top: 7rem;
+  display: none;
+}
 
 /*# sourceMappingURL=test.css.map */
