@@ -6613,11 +6613,11 @@ button.picker__today:focus, button.picker__clear:focus, button.picker__close:foc
   .picker--time .picker__box {
     margin-bottom: 5em; } }
 nav {
-  background: violet;
   top: -1px;
   position: fixed;
   z-index: 1;
-  opacity: 0.7; }
+  opacity: 0.5;
+  background: #310dff; }
 
 /*# sourceMappingURL=/css/changemate.css.map */
 

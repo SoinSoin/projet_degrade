@@ -1,5 +1,6 @@
 html {
   vertical-align: center;
+  color: #BE9AA2;
 }
 
 .hamburger {
@@ -117,13 +118,13 @@ body {
 }
 
 .filter,body {
-  height: 100rem;
+  height: 100%;
   width: 100%;  
 }
 
 .filter {
   position: fixed;
-  background-color: #6a00cf;
+  background-color: #41003D;
   opacity: 0.33;
   display: none;
   
@@ -134,7 +135,8 @@ body {
   height: 50rem;
   width: 17rem;
   left: -18rem;
-  background-color: #9100dc;
+  background-color: rgb(99,0,232);
+   
   box-shadow:     0 2px 2px 0 rgba(0, 0, 0, 0.14), 0 1px 5px 0 rgba(0, 0, 0, 0.12), 0 3px 1px -2px rgba(0, 0, 0, 0.2);
 }
 
@@ -142,8 +144,6 @@ body {
 #menu #burger {
   position: absolute;
   left: 18rem;
-  z-index: 2;
-  opacity: 2;
 }
 
 
@@ -163,20 +163,13 @@ body {
   position: relative;
   vertical-align: center;
   cursor: pointer;
-  background-color: azure;
   width: 4em;
   height: 2em;
   left: 2em;
   top: 4em;
+  margin: 
 }
 
-#color {
-  position: absolute;
-  height: 4rem;
-  width: 10rem;
-  background-color: yellow;
-  top: 7rem;
-  display: none;
-}
+
 
 /*# sourceMappingURL=test.css.map */

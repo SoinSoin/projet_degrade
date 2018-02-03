@@ -27,8 +27,6 @@ function clickOnButton()
         $("#menu").animate({left:'-18rem'},{ duration:400});
         $("input").prop('disabled', false);
         $(".filter").hide(); 
-        $(".brand-logo").css("cursor"," pointer"); 
-        $('a').add('href');
         myMenu = false;
     }
     else
@@ -37,8 +35,6 @@ function clickOnButton()
         $("#menu").animate({left:'0rem'},{duration:400});
         $("input").prop('disabled', true);
         $(".filter").show();
-        $(".brand-logo").css("cursor","default"); 
-        $('a').removeAttr('href');
         myMenu = true;
     }
 
