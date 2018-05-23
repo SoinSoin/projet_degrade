@@ -1,12 +1,12 @@
 import React, { Component } from 'react';
 import * as Semantic from 'semantic-ui-react';
 import 'semantic-ui-css/semantic.css';
-export default class App extends Component {
+import './css/style.css';
+export default class Navbar extends Component {
 
   render() {
     return (
-      <div className="App">
-      </div>
+        <nav >coucou les copains </nav>
     );
   }
 }
