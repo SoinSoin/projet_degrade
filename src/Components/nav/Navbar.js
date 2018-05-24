@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Button from './ButtonBurger';
+import Toolbar from './Toolbar';
 import './css/style.css';
 // import * as Semantic from 'semantic-ui-react';
 // import 'semantic-ui-css/semantic.css';
@@ -14,6 +15,7 @@ export default class Navbar extends Component {
     return (
       <nav >
         <Button/>
+        <Toolbar/>
       </nav>
     );
   }
